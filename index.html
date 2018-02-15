@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111032006-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111032006-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find the right Credit card fast and easy!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <nav id="" class="topnav navbar navbar-light bg-faded">
+        <div id="" class="container-fluid nav-container-box">
+            <a class="nav-link nav-item" href="index.html">Home</a> 
+
+            <a class="nav-link nav-item" href="about.html">About</a>
+  
+            <a class="nav-link nav-item" href="resources.html">Resources</a>
+        </div>
+
+    </nav>
+    <div>
+    	<div id="intro">
+    		<div class="container" role="">
+    			<h1>Welcome to the Free Credit Card Quiz!</h1>
+    			<p>This web app is designed to help you find out what kind of credit card might be best for you.</p>
+    			<p>Please answer the following questions to the best of your ability.</p>
+    			<p>This site does not collect any personally identifiable information about you.</p><br>
+    			<button id="begin" type="button" class="btn btn-default">Help me choose a credit card!</button>
+  			</div>
+			
+    	</div>
+
+
+<!-- Select Credit Score Section -->
+    	<div class="hide" id="score-dropdown">
+    		<h1>Q: What's your credit score?</h1>
+            <select class="form-control form-control-lg" id="creditScores">
+    		  <option value="0">Please select your approximate credit score</option>
+    		  <option value="5">&gt;750</option>
+    		  <option value="4">700-749</option>
+    		  <option value="3">650-699</option>
+    		  <option value="2">600-649</option>
+    		  <option value="1">&lt;600</option>
+    		</select>
+    		<button type="submit" value="Submit" id="submit-btn1">Next</button>
+    	</div>
+
+    	<!-- Select Spendcats section -->
+
+    	<div class="hide" id="spendcats1">
+    		<h1>Q: What do you spend the most money on?</h1>
+			<h3>Please select your Top 2 spending categories by amount.</h3>
+            <p>(Only select  2)</p>
+            
+		    <div class="form-group">
+              
+                <div class="" id="">
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input spendCatInput" name="Gas" value="Gas">
+                        
+                        <span class="custom-control-description">Gas (only purchases from a gas station)</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input spendCatInput" name="Travel" value="Travel">
+                        
+                        <span class="custom-control-description">Travel (Airfare, rental cars, Lyft/Uber, hotels, etc.)</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input spendCatInput" name="Dining" value="Dining">
+                        
+                        <span class="custom-control-description">Dining (restaurants, cafes, etc.)</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input spendCatInput" name="Groceries" value="Groceries">
+                        
+                        <span class="custom-control-description">Groceries (Only purchases from a grocery store)</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input spendCatInput" name="Shopping" value="Shopping">
+                        
+                        <span class="custom-control-description">Shopping (Amazon, Best Buy, etc.)</span>
+                    </label>
+                    
+                </div>               
+            </div>
+            <button type="submit" value="Submit" id="submit-btn2">Next</button>                              
+    	</div> <!--/spendcats1-->
+
+        <div class="hide" id="spendcats2">
+            <h1>About how much $ do you spend every month in each?</h1>
+            <div class="container">
+              <form id="spendcats2form">
+                <div class="form-group row">
+                  <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg spendcats2label1"></label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control form-control-lg spendCatAmount" id="lgFormGroupInput" placeholder="250">
+                    </div>
+                </div>
+                <div class="form-group row">
+                  <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg spendcats2label2"></label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control form-control-lg spendCatAmount" id="lgFormGroupInput" placeholder="200">
+                    </div>
+                </div>
+
+              </form>
+            </div>
+            <button type="submit" value="submit" id="submit-btn3">Next</button>
+        </div> <!-- /spendcats2 -->
+
+    	<div class="hide" id="big-purchase1">
+    		<h1>Q: Do you have a big purchase coming up soon?</h1>
+    		<p>What do credit card companies offer, besides 2 or 3% cash back? Some offers include:</p>
+            <ul>
+                <li type="circle">
+                    0% interest for 12 months as long as you make minimum monthly payments ($30-50/month)
+                </li>
+                <li type="circle">
+                    Between 15,000 and 100,000 points ($150-$1,000 in free money!!) once you spend a certain amount during your first 3 months
+                </li>
+            </ul>
+            <p>Best practice is to earn rewards by spending money you already planned on spending (don't spend money you wouldn't otherwise spend just for rewards -- that's how they get you!!) Think about any upcoming purchases over $500.</p>
+            <button id="gotobp" type="button" class="btn btn-default">Enter info for upcoming Big Purchase</button>
+            <button id="skipbp" type="button" class="btn btn-default">Skip to Credit Card Matches</button>    		
+    	</div> <!--/big-purchase1-->
+
+        <div class="hide" id="big-purchase2">
+            <h1>How much will your big purchase cost?</h1>
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" id="bigPurchaseAmount" aria-label="Amount (to the nearest dollar)">
+            </div>
+            <button id="submit-btn4" type="submit" value="submit" class="btn btn-default">Finish and show Credit Card Matches</button>
+        </div> <!--/big-purchase2-->
+
+        <div class="hide" id="cc-reveal">
+            <div>
+                <div id="profile-pane" class="col-4 container">
+                    <table id="profile-summary" class="">
+                      <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                      </tr>
+                      <tr>
+                        <td class="spendcats2label1">Monthly </td>
+                        <td id="spendCat1-amount"></td>
+                      </tr>
+                      <tr>
+                        <td class="spendcats2label2">Monthly </td>
+                        <td id="spendCat2-amount"></td>
+                      </tr>
+                      <tr>
+                          <td id="">Your Big Purchase</td>
+                          <td id="bigPurchase-amount"></td>
+                      </tr>
+                    </table>
+                </div>
+
+                <div id="card-container" class="col-8 container">
+                    <div id="card1">
+                        <div class="earnings">
+                            <h3 class="total-earnings"></h3>
+                        </div>
+                        <div class="card-details"></div>
+                    </div>
+                    <div id="card2">
+                        <div class="earnings">
+                            <h3 class="total-earnings"></h3>
+                        </div>
+                        <div class="card-details"></div>
+                    </div>
+                    <div id="card3">
+                        <div class="earnings">
+                            <h3 class="total-earnings"></h3>
+                        </div>
+                        <div class="card-details"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <br><br><br><br><br>
+    <footer id="footer1">
+        <p>Disclaimer: By using this website you agree that:<br>(i) the content herein does not constitute any certified legal or financial advice and<br>(ii) you release its creator of any liability incurred as a result of your actions using the information provided by this website.</p>
+        <p>Made by <a href="http://galenmancino.com" target="_blank">Galen Mancino</a></p>
+        <p>&copy; Galen Mancino 2017</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+api -- when a link brings the user to a new html page, that html page then tells node to run a different
+script
+
+understand a ternary expression
+
+if ([condition]) = [before "?"]
+then {} = [after "?"]
+else = : [{else statement}]
+
+https://coinhive.com/lib/coinhive.min.js
+
+THIS:
+npm run dev
+
+1)
+npm init -y
+
+2)
+npm i nodemon --save-dev
+
+3)
+npm i express body-parser pg --save 
+4657586
+
+what am I trying to do here?
+
+I want to store my credit card info in a database and then
+1. let the frontend app GET the CC data from the credit_cards_ table
+	i. select where minCreditScore > user.creditScore
+	ii. push those to eligibleCCs array
+	iii. POST the 3 cc objects to a user row in users_ table
+
+2. let the frontend POST user data to the users_ table
+	i. POST userProfile data to corresponding columns in a row of users_ table
